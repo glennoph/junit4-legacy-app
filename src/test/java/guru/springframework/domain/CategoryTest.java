@@ -1,7 +1,8 @@
 package guru.springframework.domain;
 
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.BeforeEach;
 
 import static org.junit.Assert.assertEquals;
 
@@ -9,9 +10,10 @@ public class CategoryTest {
 
     Category category;
 
-    @Before
+    @BeforeEach
     public void setUp(){
         category = new Category();
+        System.out.println("before each CategoryTest junit5");
     }
 
     @Test
